@@ -1,3 +1,3 @@
 # c_wwd
 
-Repositório de armazenamento.
+Armazenamento.
