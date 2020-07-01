@@ -1,3 +1,4 @@
+from gestorMain import *
 from mochila.bolso1 import *
 
 # Captura.
