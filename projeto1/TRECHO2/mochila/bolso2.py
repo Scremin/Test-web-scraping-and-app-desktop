@@ -85,7 +85,7 @@ def ajusteNovaLista(nNum, li):
 
 def rel(liS2, liS1):
     '''
-        rel(lista a ser comparada, lista fixa ou de referência)
+        rel(lista fixa ou de referência, lista a ser comparada)
         A lista de referência é fixada como (i), enquanto a outra lista é
         analisada (j) através da referência. Essa operação é realizada devido
         a mais elementos estarem relacionados mas que só são vistos se houver
@@ -107,38 +107,22 @@ def rel(liS2, liS1):
     while i < tamS2: # A lista s2 toda.
         j = 0
         varS2_h = liS2[i][0] # s2. 1ª sublista (1º elem) da lista s2. (HORA).
-        #print(varS2_h)
         c = 0 # contador s2.
         #
         for j in range(tamS1):
-            #cont = 0 # contador s1.
             varS1_h = liS1[j][0] # s1. 1ª indice da sublista 1: horas no type inteiro.
-            #print(f's2.{i} e s1.{j} == {varS1_h}')
-            #liVar.append(var)
             if varS2_h == varS1_h: # Se a hora é IGUAL.
                 # Então recorta a componente 'nome' para serem comparados.
                 elemS2 = liS2[i][2]
                 elemS1 = liS1[j][2]
                 # Se as 2 letras inicial dos nomes forem IGUAIS.
                 if (elemS2[0:1]) == (elemS1[0:1]):
-                    #print(f'Elem correlacioandos:')
-                    #print(liS1[j])
-                    #print(liS2[i])
                     #
                     if c == 0: # ADICIONAR APENAS 1 VEZ À NOVA LISTA.                    
-                        #liNewS1.append(liS1[j])
                         liNewS2.append(liS2[i])
                         c += 1
-                #print(f'O elem s2[{i}] == elem s1[{j}]')
-                #print(f'{elemS2[0:2]} == {elemS1[0:2]} ??')
-                #li.append(liVar)
             j += 1
-        #print(cont)
         i += 1
-    #print('')
-    #print(liNewS1)
-    #print('')
-    #print(liNewS2)
     #
     strERROR = '\nATENÇÃO: \nNão houve relação diária ou ainda não foi possível recolher \ntodas as informações necessárias. Ou seja, s2 deve ser \nbuscado 2 vezes por dia pra englobar o conteúdo do dia inteiro, \nporque se houver um grande número de elementos, uma única \nbusca diária não engloba o conteúdo diário por completo.'
     # RETORNA A LISTA DE MATCHING SE ELA NÃO ESTIVER VAZIA.
