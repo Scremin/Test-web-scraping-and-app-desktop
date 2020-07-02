@@ -1,2 +1,2 @@
 #
-__all__=["bolso1"]
+__all__=["bolso1", "bolso2"]
