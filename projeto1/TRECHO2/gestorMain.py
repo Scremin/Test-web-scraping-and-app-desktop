@@ -48,7 +48,7 @@ def relacio(liS2, liS1):
     nLi, flag = rel(liS2, liS1) # (lista referência, lista analisada).
     # Se a flag indicar que não houve matching, então usar a lista s2 filtrada por EURUSD.
     if flag == 0:
-        flag = len(liS2)
+        flag = 0
         return liS2, flag # Retorna a lista s2 e seu tamanho (flag).
     else:
         return nLi, flag # Retorna a lista matching e sua quantidade de elementos
