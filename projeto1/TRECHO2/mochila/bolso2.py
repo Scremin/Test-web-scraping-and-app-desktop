@@ -88,9 +88,10 @@ def rel(liS2, liS1):
         rel(lista fixa ou de referência, lista a ser comparada)
         A lista de referência é fixada como (i), enquanto a outra lista é
         analisada (j) através da referência. Essa operação é realizada devido
-        a mais elementos estarem relacionados mas que só são vistos se houver
+        a mais elementos estarem relacionados, só vistos se houver
         uma referenciação mútua. Nesse sentido, é necessario usar a mesma lista,
-        uma vez como referência e outra vez como analisada.
+        uma vez como referência e outra vez como analisada para um resultado
+        mais abrangente.
     '''
     #
     # Relação da 1ª posição s1 com a 1ª posição s2.

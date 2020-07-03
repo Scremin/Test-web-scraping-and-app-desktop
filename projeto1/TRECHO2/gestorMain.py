@@ -1,25 +1,25 @@
-from mochila.bolso1 import capturador, decepamentoS1, decepamentoS2, separS2
+from mochila.bolso1 import capt, decS1, decS2, separS2
 from mochila.bolso2 import ajusteIntPreOp, ajustoHora, ajusteNovaLista, rel
 
-def captura(s_url, s_IDbuscado):
+def capt(s_url, s_IDbuscado):
     '''
-        A captura recolhe as informações localizadas numa posição específica
+        Recolhe as informações localizadas numa posição específica
         de cada endereço.
     '''
-    s = capturador(s_url, s_IDbuscado)
+    s = capt(s_url, s_IDbuscado)
     return s
 
 
-def decepamento(s1, s2):
+def dec(s1, s2):
     '''
-        Decepamento. As strings recebidas são recortadas/decepadas de acordo
-        com as características do site e das informações úteis.
+        As strings recebidas são recortadas de acordo
+        com as características do site e das informações relevantes.
         São retornados dois dicionários com a primeira posição preenchida
         com uma lista de listas.
     '''
-    dic_s1 = decepamentoS1(s1)
+    dic_s1 = decS1(s1)
     #
-    li_s2_temp = decepamentoS2(s2)
+    li_s2_temp = decS2(s2)
     dic_s2 = separS2(li_s2_temp)
     #
     return dic_s1, dic_s2
@@ -46,10 +46,10 @@ def relacio(liS2, liS1):
          para ter seus componentes analisados isoladamente, sem utilizar s1.
     '''
     nLi, flag = rel(liS2, liS1) # (lista referência, lista analisada).
-    # Se a flag indicar que não houve matching, então usar a lista s2 filtrada por EURUSD.
+    # Se a flag indicar que não houve matching, então usa a lista s2 filtrada por EURUSD.
     if flag == 0:
         flag = 0
-        return liS2, flag # Retorna a lista s2 e seu tamanho (flag).
+        return liS2, flag # Retorna a lista s2 e o indicador de error.
     else:
         return nLi, flag # Retorna a lista matching e sua quantidade de elementos
     return [-1], -1 # Retorna -1 indicando error.

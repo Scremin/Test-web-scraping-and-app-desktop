@@ -59,7 +59,7 @@ def compEsp(carac):
 def tamanhinho1(tamanY, y):
     '''
         Recebe o tamanho da str com o último caractere, especial.
-        Com o objetivo de encontrar o tamanho numérico e separadamente.
+        Com o objetivo de encontrar o tamanho numérico separadamente.
         Retorna o tamanho do número.
     '''
     # PARCIAL À Y.
@@ -79,7 +79,7 @@ def tamanhinho1(tamanY, y):
             j += 1
         i = i + 1
         # Se o loop acabar sem número nenhum.
-        print('Não há previsão numérica para este evento s2.')
+        #print('Não há previsão numérica para este evento s2.')
         return -1 # retorno de error.
 
 
@@ -106,7 +106,7 @@ def tamanhinho2(tamanX, x):
             j += 1
         i = i + 1
         # Se o loop acabar sem número nenhum.
-        print('Não há previsão numérica para este evento s2.')
+        #print('Não há previsão numérica para este evento s2.')
         return -1 # retorno de error.
 
 

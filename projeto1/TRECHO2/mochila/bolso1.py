@@ -5,9 +5,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 
-def capturador(url, IDbuscado):
+def capt(url, IDbuscado):
     '''
-        Função scraping de captura a partir do id e caminho.
+        Scraping a partir do id e caminho.
     '''
     # -- URL
     urlRec = url
@@ -36,10 +36,10 @@ def capturador(url, IDbuscado):
     return var
 
 
-def decepamentoS1(s1):
+def decS1(s1):
     '''
-        Função de decepamento da string s1. Retorna uma lista de listas
-        na 1ª posição desse dicionário.
+        String s1. Retorna uma lista de listas
+        na 1ª posição do dicionário.
     '''
     x = s1.split('\n')
     #
@@ -84,9 +84,9 @@ def decepamentoS1(s1):
     return dic
 
 
-def decepamentoS2(s2):
+def decS2(s2):
     '''
-        Função de decepamento da string s2. Retorna uma lista de listas
+        String s2. Retorna uma lista de listas
         mais as horas, estas estão ainda soltas da lista de cada elemento.
     '''
     #
@@ -111,7 +111,7 @@ def separS2(novodic):
     '''
         Função de separação do conteúdo necessário.
         Retorna um dicionário com uma lista de listas na sua 1ª posição.
-        Filtrada pela necessidade do conteúdo 'var'.
+        Filtrada relativa ao conteúdo 'var'.
     '''
     #
     d = novodic # Recebimento da 1ª posição do dicionário s2.
