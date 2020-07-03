@@ -1,4 +1,5 @@
 from gestorMain import *
+from mochila.bolso3 import *
 
 # Captura.
 s1_url = 'https://br.tradingview.com/markets/currencies/economic-calendar/'
@@ -20,5 +21,10 @@ liS1, liS2 = ajuste(dic_s1, dic_s2)
 # RELACIONAMENTO s2 <-> s1.
 Li, flag = relacio(liS2, liS1) # (lista referência, lista analisada).
 #
-print(Li)
-print(flag)
+#print(Li)
+#print(flag)
+#
+# BPS2.
+BPS2x = BPS2(Li) #
+print(f'\nLista BPS2x: \n{BPS2x}')
+#
