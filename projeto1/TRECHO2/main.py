@@ -28,3 +28,8 @@ Li, flag = relacio(liS2, liS1) # (lista referência, lista analisada).
 BPS2x = BPS2(Li) #
 print(f'\nLista BPS2x: \n{BPS2x}')
 #
+# BPS1.
+if flag == 0:
+    BPS1 = 0
+else:
+    BPS1 = BPS1(liS1)

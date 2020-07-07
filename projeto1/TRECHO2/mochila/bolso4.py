@@ -210,18 +210,3 @@ def BPS1(s1):
         q += 1
     return liFinal # retorna BPS1.
 
-
-# Main
-'''
-# Lista s1.
-s1 = [[13, '—48 Index (diffusion)39.8 Index (diffusion)', 'Markit Mfg PMI Flash'],
-      [13, '——36.4 Index (diffusion)', 'Markit Comp Flash PMI'],
-      [13, '—46.5 Index (diffusion)36.9 Index (diffusion)', 'Markit Svcs PMI Flash'],
-      [14, '—%2.9%-5.2%', 'New Home Sales Chg MM'],
-      [14, '—0.64 M Number of0.58 M Number of', 'New Home Sales-Units']]
-#
-x = rotMain(s1) # PROCESSAMENTO BPS1.
-print('')
-print(x)
-#
-'''
