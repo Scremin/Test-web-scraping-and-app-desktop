@@ -14,10 +14,19 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setFixedSize(441, 657)
+
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI Semibold")
+        font.setBold(True)
+        font.setWeight(75)
+        MainWindow.setFont(font)
         
         MainWindow.setStyleSheet("*{\n"
         "font-size:12px;\n"
-        "font-familiy:Century Gothic;\n"
+        "font-familiy:Yu Gothic UI Semibold;\n"
+        "font-weight:75;\n"
+        #"font-weight:bold;\n"
+        "color:rgb(230, 45, 0);\n"
         " }\n"
         "QWidget{\n"
         "        }\n"
@@ -44,18 +53,38 @@ class Ui_MainWindow(object):
         
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(10, 10, 421, 81))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI Semibold")
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton.setFont(font)
         self.pushButton.setObjectName("pushButton")
         
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(10, 100, 421, 81))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI Semibold")
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_2.setFont(font)
         self.pushButton_2.setObjectName("pushButton_2")
         
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_3.setGeometry(QtCore.QRect(10, 190, 421, 81))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI Semibold")
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_3.setFont(font)
         self.pushButton_3.setObjectName("pushButton_3")
         
         self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_4.setGeometry(QtCore.QRect(10, 280, 421, 81))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI Semibold")
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_4.setFont(font)
         self.pushButton_4.setObjectName("pushButton_4")
         
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
@@ -66,10 +95,20 @@ class Ui_MainWindow(object):
         
         self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_5.setGeometry(QtCore.QRect(10, 370, 421, 81))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI Semibold")
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_5.setFont(font)
         self.pushButton_5.setObjectName("pushButton_5")
         
         self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_6.setGeometry(QtCore.QRect(10, 460, 421, 81))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI Semibold")
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_6.setFont(font)
         self.pushButton_6.setObjectName("pushButton_6")
         
         # Outras características da página.
@@ -126,7 +165,7 @@ class Ui_MainWindow(object):
         self.pushButton_3.setText(_translate("MainWindow", ""))
         self.pushButton_4.setText(_translate("MainWindow", ""))
         self.pushButton_5.setText(_translate("MainWindow", ""))
-        self.pushButton_6.setText(_translate("MainWindow", ""))
+        self.pushButton_6.setText(_translate("MainWindow", "SISTEMA INICIADO"))
 
         self.menuFile.setTitle(_translate("MainWindow", "OP"))
         self.actionSUBMENU.setText(_translate("MainWindow", "BUSCA"))
