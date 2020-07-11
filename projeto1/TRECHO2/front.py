@@ -54,6 +54,7 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton.setFont(font)
         self.pushButton.setObjectName("pushButton")
+        self.pushButton.clicked.connect(self.vis) ###
         
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(10, 100, 421, 81))
@@ -154,6 +155,45 @@ class Ui_MainWindow(object):
         except:
             print('main.py em falha...')
         #
+
+
+    def vis(self):
+        '''
+            Busca o 'bolso6.py' para a formatação do conteúdo a ser printado.
+        '''
+        lista2, lista1 = preAjusteBin()
+        #
+        liBin2 = ajusteHoraBin(lista2)
+        liBin1 = ajusteHoraBin(lista1)
+        #
+        final = printFinal(liBin2, liBin1)
+        #print(final)
+        
+        # 6 espaços disponíveis para os eventos mais próximos.
+        try:
+            self.pushButton.setText(final[0]) #
+        except:
+            self.pushButton.setText("") #
+        try:
+            self.pushButton_2.setText(final[1]) #
+        except:
+            self.pushButton_2.setText("") #
+        try:
+            self.pushButton_3.setText(final[2]) #
+        except:
+            self.pushButton_3.setText("") #
+        try:
+            self.pushButton_4.setText(final[3]) #
+        except:
+            self.pushButton_4.setText("") #
+        try:
+            self.pushButton_5.setText(final[4]) #
+        except:
+            self.pushButton_5.setText("") #
+        try:
+            self.pushButton_6.setText(final[5]) #
+        except:
+            self.pushButton_6.setText("") #
 
 
     def retranslateUi(self, MainWindow):
