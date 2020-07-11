@@ -1,12 +1,4 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'front_testeUi_1.ui'
 #
-# Created by: PyQt5 UI code generator 5.14.1
-#
-# WARNING! All changes made in this file will be lost!
-
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
@@ -14,6 +6,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setFixedSize(441, 657)
+        MainWindow.setWindowIcon(QtGui.QIcon("ISlogo.png"))
 
         font = QtGui.QFont()
         font.setFamily("Yu Gothic UI Semibold")
@@ -40,7 +33,7 @@ class Ui_MainWindow(object):
         "            color:rgb(191, 60, 0);\n"
         "        }\n"
         "        QPushButton:pressed{\n"
-        "            background:reb(224,0,0);\n"
+        "            background:rgb(1,1,1);\n"
         "            border-style:inset;;\n"
         "        }")
         
