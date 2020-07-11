@@ -1,3 +1,3 @@
 import mochila
 
-__all__=["main", "gestorMain"]
+__all__=["main", "gestorMain", "front"]

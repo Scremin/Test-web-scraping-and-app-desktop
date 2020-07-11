@@ -2,6 +2,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import pandas as pd
 from mochila.bolso6 import *
+from main import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -143,7 +144,10 @@ class Ui_MainWindow(object):
     def busca(self):
         '''
             Inicia o processo de scraping.
-            O resultado é temporariamente armazenado num arquivo pk1.
+            
+            O resultado é temporariamente armazenado num
+            arquivo pk1 ~bolso5.py~.
+            
         '''
         try:
             mainCall()
