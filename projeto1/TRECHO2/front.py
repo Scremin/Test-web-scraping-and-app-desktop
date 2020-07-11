@@ -1,6 +1,7 @@
 #
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import pandas as pd
+from mochila.bolso6 import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -138,6 +139,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+
     def busca(self):
         '''
             Inicia o processo de scraping.
@@ -148,6 +150,7 @@ class Ui_MainWindow(object):
         except:
             print('main.py em falha...')
         #
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
